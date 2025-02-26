@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(69, 76, 210);
+
+}
+
+.container {
+    max-width: min-content;
+    margin: 0 auto;
+    display: flex;
+    gap:20px;
+    padding: 10px;
+}
+
+.amarelo {
+    padding: 100px;
+    background-color: rgb(210,194,69);
+    box-sizing: border-box;
+}
+
+.flexivel {
+    display: flex;
+    gap: 20px;
+}
+
+.unir {
+    gap: 0px;
+}
+
+.coluna {
+    flex-direction: column;
+}
+
+.alongarVertical {
+    height: 100%;
+}
+
+.alongarHorizontal {
+    width: 100%;
+}
