@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Display: None</h1>
+    <div class="align">
+    <button id="revealButton">Clique aqui</button>
+    <h2 id="invisibleText" class="isHidden">Esse é um título invisível!</h2>
+    </div>
+    <br>
+    <h1>Display: Initial</h1>
+    <p class="red">
+        <span>Esse texto é vermelho.</span>
+        <em class="initialEm">Esse texto está na sua cor inicial (normalmente preto).</em>
+        <span>Esse texto é vermelho.</span>
+      </p>
+
+      <h3 style="color:black;">Sem o display Initial:</h3>
+      <p class="red">
+        <span>Esse texto é vermelho.</span>
+        <em>Esse texto não está na sua cor inicial (normalmente preto).</em>
+        <span>Esse texto é vermelho.</span>
+      </p>
+    <br>
+    <h1>Display: Inherit</h1>
+    <h2>Cor padrão do "H3": Azul</h2>
+    <span>
+    <h3>Esse <b>NÃO</b> é um título Inherit!</h3>
+</span>
+    <span class="red">
+    <h3>Esse <b>É</b> um título Inherit!</h3>
+    </span>
+
+    <script>
+       const revealButton = document.getElementById('revealButton');
+        const invisibleText = document.getElementById('invisibleText');
+
+        revealButton.addEventListener('click', () => {
+            invisibleText.classList.toggle('isHidden');
+        });
+    </script>
 </body>
 </html>

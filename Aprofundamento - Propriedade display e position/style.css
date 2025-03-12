@@ -1,0 +1,29 @@
+.isHidden {
+    display: none;
+}
+
+.align {
+    display: flex;
+    width: fit-content;
+}
+
+button {
+    min-height:67px;
+}
+
+.red {
+    color: red;
+  }
+  
+.initialEm {
+    color: initial;
+  }
+
+h3 {
+    color: blue;
+}
+  
+
+.red h3 {
+    color: inherit;
+}
